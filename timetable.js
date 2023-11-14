@@ -30,6 +30,10 @@ const day = today.getDay(); // get the day of the week
 var dayName = weekday[day]; // get the day name from the array
 console.log(dayName); // print the day name
 
+const reminders = [
+
+];
+
 window.onload = function () {
     var dayElement = document.getElementById("day-of-week");
 
