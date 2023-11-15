@@ -33,7 +33,9 @@ var dayName = weekday[day]; // get the day name from the array
 console.log(dayName); // print the day name
 
 const reminders = [
-
+    "Maths Work",
+    "PDHPE Work",
+    "Science Presentation"
 ];
 
 window.onload = function () {
@@ -45,6 +47,26 @@ window.onload = function () {
         dayElement.innerHTML = dayName + " - Week A";
     } else if (dayValue > 6) {
         dayElement.innerHTML = dayName + " - Week B";
+    }
+
+    var r1 = document.getElementById("r1");
+    var r2 = document.getElementById("r2");
+    var r3 = document.getElementById("r3");
+
+    if (reminders[0]) {
+        r1.innerHTML = reminders[0];
+    } else {
+        r1.innerHTML = null;
+    }
+    if (reminders[1]) {
+        r2.innerHTML = reminders[1];
+    } else {
+        r2.innerHTML = null;
+    }
+    if (reminders[2]) {
+        r3.innerHTML = reminders[2];
+    } else {
+        r3.innerHTML = null;
     }
 
     var p1 = document.getElementById("p1");
@@ -95,7 +117,7 @@ window.onload = function () {
         case 4: // thursday
             p1.innerHTML = "8:50 AM - Science - D2";
             p2.innerHTML = "9:48 AM - PDH - B3";
-            pr.innerHTML = "10:46 AM - Recess";
+            pr.innerHTML = "10:46 AM - Long Recess";
             p3.innerHTML = "11:26 AM - Geography - D12";
             p4.innerHTML = "12:24 PM - History - A7";
             pl.innerHTML = "1:22 PM - Lunch";
