@@ -44,10 +44,6 @@ a {
     text-decoration-thickness: 1px;
 }
 
-p::before, p::after {
-    content: ' - ';
-}
-
 .box {
     border: 4px solid black;
     border-radius: 20px;

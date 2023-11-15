@@ -34,8 +34,7 @@ console.log(dayName); // print the day name
 
 const reminders = [
     "Maths and PDHPE Work",
-    "Science Presentation",
-    "Send Aiden Troll HTML"
+    "Science Presentation"
 ];
 
 window.onload = function () {
