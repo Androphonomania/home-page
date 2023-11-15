@@ -48,24 +48,15 @@ window.onload = function () {
         dayElement.innerHTML = dayName + " - Week B";
     }
 
-    var r1 = document.getElementById("r1");
-    var r2 = document.getElementById("r2");
-    var r3 = document.getElementById("r3");
+    var remindersDiv = document.getElementById("reminders")
 
-    if (reminders[0]) {
-        r1.innerHTML = reminders[0];
-    } else {
-        r1.innerHTML = null;
-    }
-    if (reminders[1]) {
-        r2.innerHTML = reminders[1];
-    } else {
-        r2.innerHTML = null;
-    }
-    if (reminders[2]) {
-        r3.innerHTML = reminders[2];
-    } else {
-        r3.innerHTML = null;
+    for (let i = 0; i < reminders.length; i++) {
+        console.log(reminders[i]);
+
+        let r = document.createElement("p");
+        r.innerHTML = reminders[i];
+
+        remindersDiv.appendChild(r);
     }
 
     var p1 = document.getElementById("p1");
