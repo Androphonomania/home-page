@@ -205,4 +205,12 @@ window.onload = function () {
             p5.innerHTML = null;
             break;
     }
+    
+    let randChance = Math.ceil(Math.random() * 1000);
+    console.log(randChance);
+
+    if (randChance === 1000) {
+        let h1 = document.getElementById('welcome')
+        h1.innerHTML = 'I LIKE MEN!'
+    }
 };
