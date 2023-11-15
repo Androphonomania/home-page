@@ -9,9 +9,11 @@ function getDayOfFortnight(date) {
 }
 
 // Define the beginning date of the fortnight as a date object
-let beginDate = new Date("2023-01-21"); // Change this to your desired date
+let beginDate = new Date(new Date("2023-01-22").getTime() - 39600000); // Change this to your desired date
+console.log(beginDate)
 // Get the current date as a date object
 let currentDate = new Date();
+console.log(currentDate)
 // Call the function and print the result
 let dayValue = getDayOfFortnight(currentDate);
 console.log(dayValue);
