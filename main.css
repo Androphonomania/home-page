@@ -2,6 +2,10 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background: linear-gradient(to right, #ff0000, #00ff00, #0000ff, #ffff00);
+}
+
 h1 {
     font-size: 60px;
     text-align: center;
