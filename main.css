@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background: linear-gradient(to top, #3333ff, #9999ff);
+    background-image: url('https://th.bing.com/th/id/OIP.DyMriKKKKwX51PfCbAPZnwHaFj?pid=ImgDet&rs=1');
+    background-size: cover;
 }
 
 h1 {
@@ -32,14 +33,19 @@ h2 {
 
 h3 {
     margin-top: 0px;
-    color: #666666;
+    font-weight: lighter;
 }
 
 a {
-    font-size: 23px;
+    font-size: 20px;
     padding-bottom: 20px;
     color: #000000;
     text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
+
+p::before, p::after {
+    content: ' - ';
 }
 
 .box {
