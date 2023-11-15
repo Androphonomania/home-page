@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, #3333ff, #9999ff);
+    background: linear-gradient(to top, #3333ff, #9999ff);
 }
 
 h1 {
@@ -38,7 +38,7 @@ h3 {
 a {
     font-size: 23px;
     padding-bottom: 20px;
-    color: #6666ff;
+    color: #000000;
     text-underline-offset: 5px;
 }
 
@@ -50,7 +50,7 @@ a {
     padding-bottom: 40px;
     align-content: center;
     text-align: center;
-    background: #f9f9f9;
+    background: linear-gradient(to bottom, #9999ff, #ddddff);
     width: 326px;
     margin-top: 170px;
 }
