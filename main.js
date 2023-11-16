@@ -195,7 +195,7 @@ window.onload = function () {
             p5.innerHTML = null;
             break;
     }
-    
+
     let randChance = Math.ceil(Math.random() * 1000);
     console.log(randChance);
 
