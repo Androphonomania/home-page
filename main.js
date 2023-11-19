@@ -33,8 +33,7 @@ var dayName = weekday[day]; // get the day name from the array
 console.log(dayName); // print the day name
 
 const reminders = [
-    "Maths Work",
-    "Science Presentation"
+    "Maths Work"
 ];
 
 window.onload = function () {
