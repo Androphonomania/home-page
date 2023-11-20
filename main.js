@@ -33,7 +33,8 @@ var dayName = weekday[day]; // get the day name from the array
 console.log(dayName); // print the day name
 
 const reminders = [
-    "Maths Work"
+    "Maths Work",
+    "IST Assessment"
 ];
 
 window.onload = function () {
@@ -91,7 +92,7 @@ window.onload = function () {
             pr.innerHTML = "10:50 AM - Recess";
             p3.innerHTML = "11:10 AM - Commerce - DEM4";
             p4.innerHTML = "12:10 PM - Lunch";
-            pl.innerHTML = "12:45 PM - Sport - B14";
+            pl.innerHTML = "12:45 PM - Handball - B14";
             p5.innerHTML = null;
             break;
         case 3: // wednesday
@@ -154,7 +155,7 @@ window.onload = function () {
             pr.innerHTML = "10:50 AM - Recess";
             p3.innerHTML = "11:10 AM - English - A12";
             p4.innerHTML = "12:10 PM - Lunch";
-            pl.innerHTML = "12:45 PM - Sport - B14";
+            pl.innerHTML = "12:45 PM - Handball - B14";
             p5.innerHTML = null;
             break;
         case 10: // wednesday
