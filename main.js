@@ -34,7 +34,8 @@ console.log(dayName); // print the day name
 
 const reminders = [
     "Maths Work",
-    "IST Assessment"
+    "IST Assessment",
+    "Download The Lego Movie"
 ];
 
 window.onload = function () {
