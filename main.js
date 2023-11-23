@@ -10,13 +10,10 @@ function getDayOfFortnight(date) {
 
 // Define the beginning date of the fortnight as a date object
 let beginDate = new Date(new Date("2023-01-22").getTime() - 39600000); // Change this to your desired date
-console.log(beginDate)
 // Get the current date as a date object
 let currentDate = new Date();
-console.log(currentDate)
 // Call the function and print the result
 let dayValue = getDayOfFortnight(currentDate);
-console.log(dayValue);
 
 const weekday = [
     "Sunday",
@@ -30,7 +27,6 @@ const weekday = [
 const today = new Date(); // get the current date
 const day = today.getDay(); // get the day of the week
 var dayName = weekday[day]; // get the day name from the array
-console.log(dayName); // print the day name
 
 const reminders = [
     "Maths Work",
@@ -41,8 +37,6 @@ const reminders = [
 window.onload = function () {
     var dayElement = document.getElementById("day-of-week");
 
-    console.log(dayElement);
-
     if (dayValue < 7) {
         dayElement.innerHTML = dayName + " - Week A";
     } else if (dayValue > 6) {
@@ -52,8 +46,6 @@ window.onload = function () {
     var remindersDiv = document.getElementById("reminders")
 
     for (let i = 0; i < reminders.length; i++) {
-        console.log(reminders[i]);
-
         let r = document.createElement("p");
         r.innerHTML = reminders[i];
 
@@ -205,3 +197,8 @@ window.onload = function () {
         h1.innerHTML = 'I LIKE MEN!'
     }
 };
+
+const men = function() {
+    let h1 = document.getElementById('welcome')
+    h1.innerHTML = 'I LIKE MEN!'
+}
