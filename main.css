@@ -110,6 +110,10 @@ a {
     max-height: 165px;
 }
 
+#timetable p {
+    padding-bottom: 5.8px;
+}
+
 #remindersHeading {
     margin-top: 15px;
 }
