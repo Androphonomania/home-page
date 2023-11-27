@@ -184,10 +184,10 @@ window.onload = function () {
             break;
     }
 
-    let randChance = Math.ceil(Math.random() * 1000);
+    let randChance = Math.ceil(Math.random() * 20);
     console.log(randChance);
 
-    if (randChance === 1000) {
+    if (randChance === 20) {
         let h1 = document.getElementById('welcome')
         h1.innerHTML = 'I LIKE MEN!'
     }
