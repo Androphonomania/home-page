@@ -28,10 +28,8 @@ const today = new Date(); // get the current date
 const day = today.getDay(); // get the day of the week
 var dayName = weekday[day]; // get the day name from the array
 
-if (localStorage.getItem('reminders')) {
-    if ((!(JSON.parse(localStorage.getItem('reminders'))[0]))) {
-        localStorage.setItem('reminders', JSON.stringify([]));
-    }
+if (!localStorage.getItem('reminders')) {
+    localStorage.setItem('reminders', JSON.stringify([]));
 }
 
 let reminders = JSON.parse(localStorage.getItem('reminders'))
