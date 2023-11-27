@@ -200,6 +200,11 @@ const men = function() {
 
 const addReminder = function() {
     let newReminder = prompt('New reminder:');
+
+    if (newReminder === 'nigger') {
+        newReminder = 'shut up slok!!';
+    }
+
     reminders.push(newReminder);
 
     localStorage.setItem('reminders', JSON.stringify(reminders))

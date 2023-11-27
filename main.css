@@ -118,6 +118,11 @@ a {
     margin-top: 15px;
 }
 
+#reminders p {
+    padding: 0px auto;
+    margin: 10px auto;
+}
+
 ul {
     list-style: none;
 }
