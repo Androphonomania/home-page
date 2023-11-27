@@ -28,22 +28,24 @@ const today = new Date(); // get the current date
 const day = today.getDay(); // get the day of the week
 var dayName = weekday[day]; // get the day name from the array
 
-const reminders = [
-    "Maths Work",
-    "IST Assessment",
-    "Download The Lego Movie"
-];
+if (!(JSON.parse(localStorage.getItem('reminders'))[0])) {
+    localStorage.setItem('reminders', JSON.stringify([]));
+}
+
+let reminders = JSON.parse(localStorage.getItem('reminders'))
+
+var remindersDiv;
 
 window.onload = function () {
     var dayElement = document.getElementById("day-of-week");
+
+    remindersDiv = document.getElementById("reminders")
 
     if (dayValue < 7) {
         dayElement.innerHTML = dayName + " - Week A";
     } else if (dayValue > 6) {
         dayElement.innerHTML = dayName + " - Week B";
     }
-
-    var remindersDiv = document.getElementById("reminders")
 
     for (let i = 0; i < reminders.length; i++) {
         let r = document.createElement("p");
@@ -201,4 +203,30 @@ window.onload = function () {
 const men = function() {
     let h1 = document.getElementById('welcome')
     h1.innerHTML = 'I LIKE MEN!'
+}
+
+const addReminder = function() {
+    let newReminder = prompt('New reminder:');
+    reminders.push(newReminder);
+
+    localStorage.setItem('reminders', JSON.stringify(reminders))
+
+    let r = document.createElement("p");
+    r.innerHTML = newReminder;
+
+    remindersDiv.appendChild(r);
+}
+
+const removeAllReminders = function() {
+    reminders = [];
+
+    localStorage.setItem('reminders', JSON.stringify(reminders))
+
+    let reminderElements = remindersDiv.getElementsByTagName('p');
+
+    for (var i = reminderElements.length - 1; i >= 0; i--) {
+        console.log(i);
+        console.log(reminderElements[i]);
+        remindersDiv.removeChild(reminderElements[i]);
+    }
 }

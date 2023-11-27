@@ -27,6 +27,27 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
+#addReminder {
+    position: fixed;
+    margin-left: 87px;
+    margin-top: -40px;
+}
+
+#removeAll {
+    position: fixed;
+    margin-left: -110px;
+    margin-top: -43px;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold
+}
+
 h2 {
     font-size: 30px;
     margin-bottom: 10px;
@@ -41,8 +62,7 @@ a {
     font-size: 20px;
     padding-bottom: 20px;
     color: #000000;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
+    text-decoration: none;
 }
 
 .box {
@@ -79,6 +99,7 @@ a {
     float: left;
     margin-left: 850px;
     padding-bottom: 30px;
+    height: 390px;
 }
 
 #reminders {
@@ -86,6 +107,11 @@ a {
     margin-left: 430px;
     margin-top: 410px;
     padding-bottom: 20px;
+    max-height: 165px;
+}
+
+#remindersHeading {
+    margin-top: 15px;
 }
 
 ul {
