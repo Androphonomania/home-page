@@ -1,18 +1,11 @@
-// Define a function that takes a date object as a parameter and returns the day value of the fortnight
 function getDayOfFortnight(date) {
-    // Get the difference in milliseconds between the date and the beginning date of the fortnight
     let diff = date.getTime() - beginDate.getTime();
-    // Convert the difference to days and round down
     let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    // Return the remainder of dividing the days by 14
     return days % 14;
 }
 
-// Define the beginning date of the fortnight as a date object
-let beginDate = new Date(new Date("2023-01-22").getTime() - 39600000); // Change this to your desired date
-// Get the current date as a date object
+let beginDate = new Date(new Date("2023-01-22").getTime() - 39600000);
 let currentDate = new Date();
-// Call the function and print the result
 let dayValue = getDayOfFortnight(currentDate);
 
 const weekday = [
@@ -23,10 +16,10 @@ const weekday = [
     "Thursday",
     "Friday",
     "Saturday"
-]; // create an array of day names
-const today = new Date(); // get the current date
-const day = today.getDay(); // get the day of the week
-var dayName = weekday[day]; // get the day name from the array
+];
+const today = new Date();
+const day = today.getDay();
+var dayName = weekday[day];
 
 if (!localStorage.getItem('reminders')) {
     localStorage.setItem('reminders', JSON.stringify([]));
