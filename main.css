@@ -125,6 +125,10 @@ a {
     margin: 5px auto;
 }
 
+#reminders p:hover {
+    text-decoration: line-through;
+}
+
 ul {
     list-style: none;
 }

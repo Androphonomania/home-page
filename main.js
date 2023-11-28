@@ -29,6 +29,8 @@ let reminders = JSON.parse(localStorage.getItem('reminders'))
 
 var remindersDiv;
 
+let reminderElements;
+
 window.onload = function () {
     var dayElement = document.getElementById("day-of-week");
 
@@ -192,6 +194,23 @@ window.onload = function () {
         h1.innerHTML = 'I LIKE MEN!'
         console.log('men mode enabled')
     }
+
+    reminderElements = remindersDiv.getElementsByTagName('p');
+    for (let i = 0; i < reminderElements.length; i++) {
+        reminderElements[i].onclick = function () {
+            reminders = reminders.filter(function (element) {
+                return element !== reminderElements[i].innerHTML;
+            });
+
+            console.log(reminders)
+
+            localStorage.setItem('reminders', JSON.stringify(reminders))
+
+            remindersDiv.removeChild(reminderElements[i]);
+
+            reminderElements = remindersDiv.getElementsByTagName('p');
+        }
+    }
 };
 
 const men = function () {
@@ -211,6 +230,22 @@ const addReminder = function () {
     r.innerHTML = newReminder;
 
     remindersDiv.appendChild(r);
+
+    reminderElements = remindersDiv.getElementsByTagName('p');
+
+    r.onclick = function () {
+        reminders = reminders.filter(function (element) {
+            return element !== r.innerHTML;
+        });
+
+        console.log(reminders)
+
+        localStorage.setItem('reminders', JSON.stringify(reminders))
+
+        remindersDiv.removeChild(r);
+
+        reminderElements = remindersDiv.getElementsByTagName('p');
+    }
 }
 
 const removeAllReminders = function () {
@@ -221,8 +256,6 @@ const removeAllReminders = function () {
     let reminderElements = remindersDiv.getElementsByTagName('p');
 
     for (var i = reminderElements.length - 1; i >= 0; i--) {
-        console.log(i);
-        console.log(reminderElements[i]);
         remindersDiv.removeChild(reminderElements[i]);
     }
 }
