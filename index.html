@@ -8,14 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&family=Space+Mono&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-    <h1 id="welcome">Welcome to the home page!</h1>
-    <div class="box" id="classrooms">
+    <h1 class='animate__animated animate__fadeInDown animate__slow' id="welcome">Welcome to the home page!</h1>
+    <div class="box animate__animated animate__fadeInLeft" id="classrooms">
         <h2>Classrooms</h2>
         <a target="_blank" href="https://classroom.google.com/u/0/c/NTg3MTQyODA0NTM2">Maths</a>
         <br />
@@ -38,7 +41,7 @@
         <a target="_blank" href="https://classroom.google.com/u/0/c/MjQyMDIwMDg5Mzg5">Year 9</a>
         <br />
     </div>
-    <div class="box" id="resources">
+    <div class="box animate__animated animate__fadeInDown" id="resources">
         <h2>Resources</h2>
         <a target="_blank" href="https://rydesecondarycollege.sentral.com.au/portal2/#!/login">Sentral</a>
         <br />
@@ -46,12 +49,12 @@
         <br />
         <a target="_blank" href="game.html">Gun Mayhem 2</a>
     </div>
-    <div class="box" id="reminders">
+    <div class="box animate__animated animate__fadeInUp" id="reminders">
         <h2 id="remindersHeading">Reminders</h2>
         <button id='addReminder' name='reminderButton' onclick="addReminder()">+</button>
         <button id='removeAll' name='removeAllButton' onclick="removeAllReminders()">x</button>
     </div>
-    <div class="box" id="timetable">
+    <div class="box animate__animated animate__fadeInRight" id="timetable">
         <h2>Timetable</h2>
         <h3 id="day-of-week">[day goes here]</h3>
         <p id="p1">[period 1]</p>

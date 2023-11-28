@@ -25,6 +25,7 @@ h1 {
     position: fixed;
     width: 1230px;
     font-family: 'Raleway', sans-serif;
+    --animate-duration: 0.5s;
 }
 
 #addReminder {
@@ -84,6 +85,7 @@ a {
     margin-left: 10px;
     margin-right: 40px;
     line-height: 30px;
+    height: 400px;
 }
 
 #resources {
@@ -99,7 +101,7 @@ a {
     float: left;
     margin-left: 850px;
     padding-bottom: 30px;
-    height: 390px;
+    height: 410px;
 }
 
 #reminders {
@@ -107,7 +109,7 @@ a {
     margin-left: 430px;
     margin-top: 410px;
     padding-bottom: 20px;
-    max-height: 165px;
+    max-height: 180px;
 }
 
 #timetable p {
@@ -116,6 +118,11 @@ a {
 
 #remindersHeading {
     margin-top: 15px;
+}
+
+#reminders p {
+    padding: 0px auto;
+    margin: 5px auto;
 }
 
 ul {
