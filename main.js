@@ -194,13 +194,13 @@ window.onload = function () {
     }
 };
 
-const men = function() {
+const men = function () {
     let h1 = document.getElementById('welcome')
     h1.innerHTML = 'I LIKE MEN!'
     console.log('men mode enabled')
 }
 
-const addReminder = function() {
+const addReminder = function () {
     let newReminder = prompt('New reminder:');
 
     reminders.push(newReminder);
@@ -213,7 +213,7 @@ const addReminder = function() {
     remindersDiv.appendChild(r);
 }
 
-const removeAllReminders = function() {
+const removeAllReminders = function () {
     reminders = [];
 
     localStorage.setItem('reminders', JSON.stringify(reminders))
