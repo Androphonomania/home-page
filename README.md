@@ -8,4 +8,8 @@ there's just one css file and it's so cool!
 one javascript file that controls a lot and it's the coolest part of the whole website
 ## ICO
 the icons
-nothing else to say
+## How to run
+open cmd in folder, then run
+```
+python3 -m http.server
+```
