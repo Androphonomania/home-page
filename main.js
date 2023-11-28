@@ -190,12 +190,14 @@ window.onload = function () {
     if (randChance === 20) {
         let h1 = document.getElementById('welcome')
         h1.innerHTML = 'I LIKE MEN!'
+        console.log('men mode enabled')
     }
 };
 
 const men = function() {
     let h1 = document.getElementById('welcome')
     h1.innerHTML = 'I LIKE MEN!'
+    console.log('men mode enabled')
 }
 
 const addReminder = function() {
