@@ -8,6 +8,8 @@ there's just one css file and it's so cool!
 one javascript file that controls a lot and it's the coolest part of the whole website
 ## ICO
 the icons
+## Dockerfile
+i don't have a good answer for this one it just showed up one day
 ## How to run
 open cmd in folder, then run
 ```
