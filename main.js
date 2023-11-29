@@ -214,9 +214,14 @@ window.onload = function () {
 };
 
 const men = function () {
-    let h1 = document.getElementById('welcome')
-    h1.innerHTML = 'I LIKE MEN!'
-    console.log('men mode enabled')
+    let h1 = document.getElementById('welcome');
+    h1.innerHTML = 'I LIKE MEN!';
+    console.log('men mode enabled');
+}
+
+const removeCSS = function () {
+    let stylesheet = document.getElementById('stylesheet');
+    stylesheet.remove();
 }
 
 const addReminder = function () {
