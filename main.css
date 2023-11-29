@@ -127,6 +127,7 @@ a {
 
 #reminders p:hover {
     text-decoration: line-through;
+    cursor: pointer;
 }
 
 ul {
