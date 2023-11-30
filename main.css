@@ -5,6 +5,7 @@ html {
 body {
     background-image: url('https://th.bing.com/th/id/OIP.DyMriKKKKwX51PfCbAPZnwHaFj?pid=ImgDet&rs=1');
     background-size: cover;
+    overflow: hidden;
 }
 
 h1 {
@@ -13,31 +14,17 @@ h1 {
     text-indent: -20px;
     background: linear-gradient(to bottom, #bbbbff, #eeeeff);
     margin-top: -10px;
-    margin-left: -10px;
+    margin-left: -18px;
     margin-right: -8px;
     margin-bottom: 20px;
     padding: 40px 5px;
-    padding-left: 30px;
     border: 5px solid #000000;
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
-    position: fixed;
-    width: 1230px;
+    width: 100vw;
     font-family: 'Raleway', sans-serif;
     --animate-duration: 0.5s;
-}
-
-#addReminder {
-    position: fixed;
-    margin-left: 87px;
-    margin-top: -40px;
-}
-
-#removeAll {
-    position: fixed;
-    margin-left: -110px;
-    margin-top: -43px;
 }
 
 button {
@@ -75,49 +62,47 @@ a {
     align-content: center;
     text-align: center;
     background: linear-gradient(to bottom, #aaaaff, #ddddff);
-    width: 326px;
-    margin-top: 170px;
+    width: 26.2vw;
+    margin-top: 0;
+    float: left;
 }
 
 #classrooms {
-    position: fixed;
-    float: left;
-    margin-left: 10px;
-    margin-right: 40px;
-    line-height: 30px;
-    height: 400px;
+    line-height: 4.9vh;
+    height: 60vh;
+    margin-left: 3vh;
 }
 
 #resources {
-    position: fixed;
-    float: left;
-    margin-left: 430px;
-    margin-right: 40px;
-    line-height: 30px;
-}
-
-#timetable {
-    position: fixed;
-    float: left;
-    margin-left: 850px;
-    padding-bottom: 30px;
-    height: 410px;
+    line-height: 4.3vh;
+    margin-left: 8vh;
 }
 
 #reminders {
-    position: fixed;
-    margin-left: 430px;
-    margin-top: 410px;
-    padding-bottom: 20px;
-    max-height: 180px;
+    margin-top: 3vh;
+    margin-left: 6vh;
+    max-height: 25vh;
 }
 
-#timetable p {
-    padding-bottom: 5.8px;
+#reminders h2, #reminders button {
+    display: inline;
+    margin-top: 4vh;
 }
 
-#remindersHeading {
-    margin-top: 15px;
+#reminders h2 {
+    padding: 1px;
+}
+
+#removeAll {
+    padding-top: -2px;
+}
+
+#timetable {
+    margin-top: -32vh;
+    margin-left: 5vh;
+    height: 60vh;
+    line-height: 4.3vh;
+    width: 26vw;
 }
 
 #reminders p {
