@@ -14,7 +14,7 @@ h1 {
     text-indent: -20px;
     background: linear-gradient(to bottom, #bbbbff, #eeeeff);
     margin-top: -10px;
-    margin-left: -18px;
+    margin-left: -125px;
     margin-right: -8px;
     margin-bottom: 20px;
     padding: 40px 5px;
@@ -22,7 +22,7 @@ h1 {
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
-    width: 100vw;
+    width: 120vw;
     font-family: 'Raleway', sans-serif;
     --animate-duration: 0.5s;
 }
@@ -71,16 +71,17 @@ a {
     line-height: 4.9vh;
     height: 60vh;
     margin-left: 3vh;
+    margin-right: -1vw;
 }
 
 #resources {
     line-height: 4.3vh;
-    margin-left: 8vh;
+    margin-left: 4.1vw;
 }
 
 #reminders {
     margin-top: 3vh;
-    margin-left: 6vh;
+    margin-left: 4.1vw;
     max-height: 25vh;
 }
 
@@ -94,14 +95,14 @@ a {
 }
 
 #removeAll {
-    padding-top: -2px;
+    margin-top: -5px;
 }
 
 #timetable {
     margin-top: -32vh;
     margin-left: 5vh;
     height: 60vh;
-    line-height: 4.3vh;
+    line-height: 4vh;
     width: 26vw;
 }
 
