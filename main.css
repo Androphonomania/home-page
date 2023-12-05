@@ -12,7 +12,7 @@ h1 {
     font-size: 60px;
     text-align: center;
     text-indent: -20px;
-    background: linear-gradient(to bottom, #bbbbff, #eeeeff);
+    background: linear-gradient(to bottom, #9999ff, #eeeeff);
     margin-top: -10px;
     margin-left: -125px;
     margin-right: -8px;
@@ -61,7 +61,7 @@ a {
     padding-bottom: 40px;
     align-content: center;
     text-align: center;
-    background: linear-gradient(to bottom, #aaaaff, #ddddff);
+    background: linear-gradient(to bottom, #9999ff, #eeeeff);
     width: 26.2vw;
     margin-top: 0;
     float: left;
